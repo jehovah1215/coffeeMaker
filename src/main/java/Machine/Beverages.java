@@ -7,9 +7,9 @@ import java.util.HashMap;
  */
 public class Beverages {
 
-    String name;
+    public String name;
 
-    HashMap<String,Double> composition;
+    public HashMap<String,Double> composition;
 
     Beverages(String name,  HashMap<String,Double> composition)
     {

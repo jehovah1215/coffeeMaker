@@ -16,6 +16,10 @@ import java.util.Map;
 /**
  * Created by sushant.s on 08/07/20.
  */
+
+/**
+ * This class will parse the inputJson Request
+ */
 public class RequestParseUtil {
 
     public static HashMap<String,Object> processJsonRequest(String jsonFilePath){
