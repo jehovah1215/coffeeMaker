@@ -10,7 +10,7 @@ import java.util.*;
  */
 public class MachineServiceImpl implements IMachineService {
     Inventory inv = Inventory.getInventoryInstance();
-    HashMap<String,Double> storage = inv.getInventoryMap();
+    HashMap<String,Double> storage = inv.inventoryMap;
 
     public boolean brewDrink(HashMap<String, Double> receipe, String drink) {
         for(String ingredients : receipe.keySet()) {

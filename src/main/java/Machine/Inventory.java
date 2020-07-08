@@ -8,6 +8,7 @@ public class Inventory {
     public HashMap<String,Double> inventoryMap;
 
     private Inventory() {
+        inventoryMap = new HashMap<String, Double>();
 
     }
     public static Inventory getInventoryInstance()

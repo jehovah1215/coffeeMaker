@@ -30,11 +30,10 @@ public class MachineMainClass {
     void serveDrinks( HashMap<String,Object> parseMap) {
         int outlets = (Integer) parseMap.get("outlets");
         HashMap<String,Double> storage =  (HashMap<String,Double>)parseMap.get("storage");
-        inventory.setInventoryMap(storage);
+        inventory.inventoryMap=storage;
         List<Beverages> beveragesList = (List<Beverages>)parseMap.get("beverages");
         for (int i=0;i<beveragesList.size();i++) {
             String drinkName =beveragesList.get(i).name;
-            System.out.println("Started brewing "+ drinkName);
            boolean status = service.brewDrink(beveragesList.get(i).composition,drinkName);
            if(status)
                System.out.println("Here is your "+ drinkName);
